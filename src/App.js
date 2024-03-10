@@ -1,21 +1,30 @@
+import React, { Suspense } from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Loading from "./components/Loading";
+import Home from "./pages/Home";
+
 function App() {
   return (
-    <div className=" ">
-      <header className="App-header ">
-        <img src={""} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div
+        className="grid grid-cols-12 p-4 bg-background_body  gap-2"
+        theme-mode="dark"
+      >
+        <div className=" col-span-3 p-20 bg-background_box rounded-lg">
+          sidebar
+        </div>
+        <div className=" col-span-6 p-20 bg-background_box rounded-lg">
+          <Suspense fallback={<Loading />}>
+            <Routes>
+              <Route path={"/"} element={<Home />} />
+            </Routes>
+          </Suspense>
+        </div>
+        <div className=" col-span-3 p-20 bg-background_box rounded-lg">
+          more
+        </div>
+      </div>
+    </Router>
   );
 }
 

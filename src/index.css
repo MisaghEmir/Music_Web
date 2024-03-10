@@ -156,8 +156,8 @@ div[theme-mode="dark"] {
   /* Background ---------------- */
   /* --------------------------- */
 
-  --background-body: rgb(18, 22, 29);
-  --color-box: rgb(25, 34, 43);
+  --background-body: rgb(0, 0, 0);
+  --color-box: rgb(21, 21, 22);
   --color-box-shadow: rgb(13, 16, 19);
   --color-menu: rgba(18, 22, 29, 0.4);
 
@@ -330,7 +330,6 @@ div[data-theme="yellow"] {
 .box {
   background-color: var(--color-box);
   box-shadow: 0px 0px 22px 5px var(--color-box-shadow);
-  
 }
 
 .notscroll::-webkit-scrollbar {
