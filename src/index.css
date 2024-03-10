@@ -4,10 +4,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Anta&family=Courgette&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 body {
   margin: 0;
-  font-family: "Anta", sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
   -moz-osx-font-smoothing: grayscale;
@@ -69,7 +70,7 @@ body {
 
 .playfair {
   font-family: "Playfair Display", serif;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 html {
@@ -116,6 +117,11 @@ div[theme-mode="light"] {
   --color-back-gray-800: #e7e7e7;
   --color-back-gray-900: rgb(247, 247, 247);
 
+  --color-Charcoal: #faf9f6;
+  --color-DarkGreen: #edeade;
+  --color-DarkPurple: #f9f6ee;
+  --color-JetBlack: #e2dfd2;
+
   /* TEXT COLOR ---------------- */
   /* --------------------------- */
 
@@ -157,7 +163,7 @@ div[theme-mode="dark"] {
   /* --------------------------- */
 
   --background-body: rgb(0, 0, 0);
-  --color-box: rgb(21, 21, 22);
+  --color-box: #1b1b1d;
   --color-box-shadow: rgb(13, 16, 19);
   --color-menu: rgba(18, 22, 29, 0.4);
 
@@ -177,6 +183,11 @@ div[theme-mode="dark"] {
   --color-back-gray-100: #999999;
   --color-back-gray-50: #aaaaaa;
   --color-back-gray-0: #fafafa;
+
+  --color-Charcoal: #36454f;
+  --color-DarkGreen: #023020;
+  --color-DarkPurple: #301934;
+  --color-JetBlack: #343434;
 
   /* TEXT COLOR ---------------- */
   /* --------------------------- */
