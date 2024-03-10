@@ -1,0 +1,359 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Anta", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+
+  /* // RED THEME ----------------------------------------- */
+
+  --color-themered-100: rgb(255, 48, 48);
+  --color-themered-200: rgba(255, 48, 48, 0.1);
+
+  /* // blue THEME ----------------------------------------- */
+
+  --color-themeblue-100: rgb(7, 141, 238);
+  --color-themeblue-200: rgba(7, 141, 238, 0.1);
+
+  /* // YELLOW THEME ----------------------------------------- */
+
+  --color-themeyellow-100: rgb(253, 169, 45);
+  --color-themeyellow-200: rgba(253, 169, 45, 0.1);
+
+  /* // PURPLE THEME ----------------------------------------- */
+
+  --color-themepurple-100: rgb(118, 53, 220);
+  --color-themepurple-200: rgba(118, 53, 220, 0.1);
+
+  /* // BLUESKY THEME ----------------------------------------- */
+
+  --color-themebluesky-100: rgb(32, 101, 209);
+  --color-themebluesky-200: rgba(32, 101, 209, 0.1);
+
+  /* // GREEN THEME ----------------------------------------- */
+
+  --color-themegreen-100: rgb(0, 167, 111);
+  --color-themegreen-200: rgba(0, 167, 111, 0.1);
+
+  /* // COVER COLOR ----------------------------------------- */
+
+  --color-cover-100: rgba(255, 255, 255, 0.1);
+  --color-cover-200: rgba(255, 255, 255, 0.2);
+  --color-cover-300: rgba(255, 255, 255, 0.3);
+  --color-cover-400: rgba(255, 255, 255, 0.4);
+  --color-cover-500: rgba(255, 255, 255, 0.5);
+  --color-cover-600: rgba(255, 255, 255, 0.6);
+  --color-cover-700: rgba(255, 255, 255, 0.7);
+  --color-cover-800: rgba(255, 255, 255, 0.8);
+  --color-cover-900: rgba(255, 255, 255, 0.9);
+
+  --color-coverblack-100: rgba(0, 0, 0, 0.1);
+  --color-coverblack-200: rgba(0, 0, 0, 0.2);
+  --color-coverblack-300: rgba(0, 0, 0, 0.3);
+  --color-coverblack-400: rgba(0, 0, 0, 0.4);
+  --color-coverblack-500: rgba(0, 0, 0, 0.5);
+  --color-coverblack-600: rgba(0, 0, 0, 0.6);
+  --color-coverblack-700: rgba(0, 0, 0, 0.7);
+  --color-coverblack-800: rgba(0, 0, 0, 0.8);
+  --color-coverblack-900: rgba(0, 0, 0, 0.9);
+}
+
+.playfair {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+div[theme-mode="light"] {
+  /* Background ---------------- */
+  /* --------------------------- */
+
+  --background-body: rgb(253, 253, 253);
+  --color-box: rgb(255, 255, 255);
+  --color-box-shadow: rgb(244, 245, 248);
+  --color-menu: rgba(255, 255, 255, 0.4);
+
+  --bg-secend-100: rgb(145, 158, 171);
+  --bg-secend-200: rgb(207, 208, 209);
+  --bg-secend-300: rgb(207, 207, 207);
+  --bg-secend-400: rgb(237, 237, 237);
+
+  --color-back-gray-0: #000;
+  --color-back-gray-50: #222222;
+  --color-back-gray-100: #333333;
+  --color-back-gray-200: #444444;
+  --color-back-gray-300: #555555;
+  --color-back-gray-400: #666666;
+  --color-back-gray-500: #777777;
+  --color-back-gray-600: #888888;
+  --color-back-gray-700: #999999;
+  --color-back-gray-800: #e7e7e7;
+  --color-back-gray-900: rgb(247, 247, 247);
+
+  /* TEXT COLOR ---------------- */
+  /* --------------------------- */
+
+  --color-textSecond-0: #000;
+  --color-textSecond-50: #222222;
+  --color-textSecond-100: #333333;
+  --color-textSecond-200: #444444;
+  --color-textSecond-300: #555555;
+  --color-textSecond-400: #666666;
+  --color-textSecond-500: #777777;
+  --color-textSecond-600: #888888;
+  --color-textSecond-700: #999999;
+  --color-textSecond-800: #aaaaaa;
+  --color-textSecond-900: #fafafa;
+
+  /* BORDER COLOR ------------------- */
+  /* -------------------------------- */
+
+  --color-border-0: rgba(0, 0, 0, 0);
+  --color-border-50: rgba(33, 33, 33, 0.2);
+  --color-border-100: rgba(66, 66, 66, 0.3);
+  --color-border-200: rgba(97, 97, 97, 0.4);
+  --color-border-300: rgba(117, 117, 117, 0.4);
+  --color-border-400: rgba(158, 158, 158, 0.4);
+  --color-border-500: rgba(189, 189, 189, 0.4);
+  --color-border-600: rgba(224, 224, 224, 0.4);
+  --color-border-700: rgba(238, 238, 238, 0.7);
+  --color-border-800: rgba(245, 245, 245, 0.8);
+  --color-border-900: rgba(250, 250, 250, 0.9);
+}
+
+div[theme-mode="light"][box-theme="neon"] {
+  --background-body: rgb(244, 245, 248);
+  --color-menu: rgba(255, 255, 255, 0.2);
+}
+
+div[theme-mode="dark"] {
+  /* Background ---------------- */
+  /* --------------------------- */
+
+  --background-body: rgb(18, 22, 29);
+  --color-box: rgb(25, 34, 43);
+  --color-box-shadow: rgb(13, 16, 19);
+  --color-menu: rgba(18, 22, 29, 0.4);
+
+  --bg-secend-100: rgb(41, 52, 64);
+  --bg-secend-200: rgb(207, 208, 209);
+  --bg-secend-300: rgb(32, 39, 49);
+  --bg-secend-400: rgb(32, 39, 49);
+
+  --color-back-gray-900: rgb(38, 50, 61);
+  --color-back-gray-800: rgb(52, 63, 73);
+  --color-back-gray-700: #333333;
+  --color-back-gray-600: #444444;
+  --color-back-gray-500: #555555;
+  --color-back-gray-400: #666666;
+  --color-back-gray-300: #777777;
+  --color-back-gray-200: #888888;
+  --color-back-gray-100: #999999;
+  --color-back-gray-50: #aaaaaa;
+  --color-back-gray-0: #fafafa;
+
+  /* TEXT COLOR ---------------- */
+  /* --------------------------- */
+
+  --color-textSecond-50: #ffffff;
+  --color-textSecond-100: #f5f5f5;
+  --color-textSecond-200: #eeeeee;
+  --color-textSecond-300: #e0e0e0;
+  --color-textSecond-400: #bdbdbd;
+  --color-textSecond-500: #9e9e9e;
+  --color-textSecond-600: #757575;
+  --color-textSecond-700: #616161;
+  --color-textSecond-800: #424242;
+  --color-textSecond-900: #212121;
+
+  /* BORDER COLOR ------------------- */
+  /* -------------------------------- */
+
+  --color-border-50: rgba(250, 250, 250, 1);
+  --color-border-100: rgba(245, 245, 245, 0.8);
+  --color-border-200: rgba(238, 238, 238, 0.6);
+  --color-border-300: rgba(224, 224, 224, 0.6);
+  --color-border-400: rgba(189, 189, 189, 0.4);
+  --color-border-500: rgba(158, 158, 158, 0.4);
+  --color-border-600: rgba(117, 117, 117, 0.2);
+  --color-border-700: rgba(97, 97, 97, 0.4);
+  --color-border-800: rgba(66, 66, 66, 0.4);
+  --color-border-900: rgba(33, 33, 33, 0.1);
+}
+
+div[theme-mode="dark"][box-theme="neon"] {
+  --background-body: rgb(18, 22, 29);
+  --color-box-shadow: rgb(18, 22, 29);
+}
+
+div[data-theme="red"] {
+  /* BACKGROUND------------- */
+
+  --theme-bg-100: #ff3030;
+  --theme-bg-200: #e4504c;
+  --theme-bg-300: #ff7067;
+  --theme-bg-400: #ff8e80;
+  --theme-bg-500: #ffbcba;
+  --theme-bg-600: rgb(255, 227, 225);
+  --theme-bg-700: rgba(255, 48, 48, 0.111);
+  --theme-bg-800: linear-gradient(to top, #563e44 20%, #ff8e80);
+
+  /* TEXT------------- */
+
+  --theme-text-100: rgb(255, 48, 48);
+  --theme-text-200: #ff796e;
+  --theme-text-300: #ff7067;
+  --theme-text-400: #ff8e80;
+}
+div[data-theme="green"] {
+  /* BACKGROUND------------- */
+
+  --theme-bg-100: rgb(0, 167, 111);
+  --theme-bg-200: rgb(0, 167, 111);
+  --theme-bg-300: rgb(0, 167, 111);
+  --theme-bg-400: rgb(168, 226, 205);
+  --theme-bg-500: rgb(113, 211, 178);
+  --theme-bg-600: rgb(213, 243, 230);
+  --theme-bg-700: rgba(91, 240, 195, 0.111);
+  --theme-bg-800: linear-gradient(to top, #563e44 20%, #a8e2cd);
+
+  /* TEXT------------- */
+
+  --theme-text-100: rgb(0, 167, 111);
+  --theme-text-200: rgb(0, 167, 111);
+  --theme-text-300: rgb(52, 189, 143);
+  --theme-text-400: rgb(92, 197, 162);
+}
+div[data-theme="purple"] {
+  /* BACKGROUND------------- */
+
+  --theme-bg-100: rgb(118, 53, 220);
+  --theme-bg-200: rgb(118, 53, 220);
+  --theme-bg-300: rgb(118, 53, 220);
+  --theme-bg-400: rgb(209, 187, 244);
+  --theme-bg-500: rgb(161, 120, 228);
+  --theme-bg-600: rgb(233, 221, 250);
+  --theme-bg-700: rgba(128, 76, 224, 0.111);
+  --theme-bg-800: linear-gradient(to top, #563e44 20%, #ff8e80);
+
+  /* TEXT------------- */
+
+  --theme-text-100: #ff3030;
+  --theme-text-200: rgb(118, 53, 220);
+  --theme-text-300: rgb(32, 10, 105);
+  --theme-text-400: rgb(117, 100, 166);
+}
+div[data-theme="blue"] {
+  /* BACKGROUND------------- */
+
+  --theme-bg-100: rgb(32, 101, 209);
+  --theme-bg-200: rgb(32, 101, 209);
+  --theme-bg-300: rgb(32, 101, 209);
+  --theme-bg-400: rgb(178, 203, 240);
+  --theme-bg-500: rgb(121, 161, 226);
+  --theme-bg-600: rgb(218, 230, 249);
+  --theme-bg-700: rgba(80, 144, 240, 0.111);
+  --theme-bg-800: linear-gradient(to top, #563e44 20%, #ff8e80);
+
+  /* TEXT------------- */
+
+  --theme-text-100: #ff3030;
+  --theme-text-200: rgb(62, 122, 214);
+  --theme-text-300: rgb(6, 27, 100);
+  --theme-text-400: rgb(118, 135, 178);
+}
+div[data-theme="bluesky"] {
+  /* BACKGROUND------------- */
+
+  --theme-bg-100: rgb(7, 141, 238);
+  --theme-bg-200: rgb(7, 141, 238);
+  --theme-bg-300: rgb(7, 141, 238);
+  --theme-bg-400: rgb(169, 216, 249);
+  --theme-bg-500: rgb(93, 179, 240);
+  --theme-bg-600: rgb(212, 236, 252);
+  --theme-bg-700: rgba(68, 162, 230, 0.111);
+  --theme-bg-800: linear-gradient(to top, #563e44 20%, #ff8e80);
+
+  /* TEXT------------- */
+
+  --theme-text-100: rgb(1, 41, 114);
+  --theme-text-200: rgb(28, 151, 239);
+  --theme-text-300: rgb(1, 41, 114);
+  --theme-text-400: rgb(108, 139, 183);
+}
+div[data-theme="yellow"] {
+  /* BACKGROUND------------- */
+
+  --theme-bg-100: rgb(253, 169, 45);
+  --theme-bg-200: rgb(253, 192, 88);
+  --theme-bg-300: rgb(253, 225, 183);
+  --theme-bg-400: rgb(254, 219, 165);
+  --theme-bg-500: rgb(254, 241, 219);
+  --theme-bg-600: rgb(254, 241, 220);
+  --theme-bg-700: rgba(255, 205, 119, 0.2);
+  --theme-bg-800: linear-gradient(to top, #563e44 20%, #ff8e80);
+
+  /* TEXT------------- */
+
+  --theme-text-100: rgb(253, 190, 83);
+  --theme-text-200: rgb(253, 190, 83);
+  --theme-text-300: rgb(240, 175, 70);
+  --theme-text-400: rgb(230, 165, 60);
+}
+
+.box {
+  background-color: var(--color-box);
+  box-shadow: 0px 0px 22px 5px var(--color-box-shadow);
+  
+}
+
+.notscroll::-webkit-scrollbar {
+  width: 0px;
+}
+
+.notscroll::-webkit-scrollbar-thumb {
+  background-color: rgb(207, 207, 207);
+  border-radius: 100px;
+  height: 50%;
+  width: 0;
+}
+
+.transt {
+  transition: all 0.4s;
+  background-color: var(--color-menu);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+}
+
+.search {
+  transition: all 0.2s;
+  background-color: var(--color-menu);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
