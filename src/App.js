@@ -23,7 +23,7 @@ function App() {
         <div
           className={`col-span-12 main ${
             sidebar ? "md:col-span-7" : "md:col-span-9"
-          }  rounded-lg`}
+          }  rounded-lg h-[97vh] notscroll  overflow-scroll`}
         >
           <Suspense fallback={<Loading />}>
             <Routes>

@@ -22,20 +22,39 @@ function Home() {
       <Topbar />
       <div className="p-5 px-7">
         <div>
-          <label htmlFor="">Recently played</label>
-          <div className="grid grid-cols-12">
+          <label htmlFor="" className=" text-lg font-bold">
+            Recently played
+          </label>
+          <div className="grid grid-cols-12 gap-7 mt-4">
             {songs.map((item, index) => (
-              <div className="grid grid-cols-12 gap-7 mt-7" key={index}>
+              <div className="col-span-3" key={index}>
                 <HomePost item={item} />
               </div>
             ))}
           </div>
         </div>
-        <div>
+        <div className="mt-4">
           <label htmlFor="" className=" text-lg font-bold">
             Recently played
           </label>
-          <div className="grid grid-cols-12 gap-7 mt-7">
+          <div className="grid grid-cols-12 gap-7 mt-4">
+            {songs.map((item, index) => (
+              <>
+                <div className=" col-span-3" key={index}>
+                  <HomePost item={item} />
+                </div>
+                <div className=" col-span-3" key={index}>
+                  <HomePost item={item} />
+                </div>
+              </>
+            ))}
+          </div>
+        </div>
+        <div className="mt-4">
+          <label htmlFor="" className=" text-lg font-bold">
+            Recently played
+          </label>
+          <div className="grid grid-cols-12 gap-7 mt-4">
             {songs.map((item, index) => (
               <>
                 <div className=" col-span-3" key={index}>
