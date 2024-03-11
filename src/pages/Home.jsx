@@ -2,6 +2,7 @@ import React, { useEffect, useCallback, useState } from "react";
 import Topbar from "../components/Topbar";
 import { getPlaylistAll, getSongAll } from "../config/API";
 import HomePost from "../components/posts/HomePost";
+import SwiperPost from "../components/posts/SwiperPost";
 
 function Home() {
   const [playlists, setPlaylists] = useState([]);
@@ -25,19 +26,23 @@ function Home() {
           <label htmlFor="" className=" text-lg font-bold">
             Recently played
           </label>
-          <div className="grid grid-cols-12 gap-7 mt-4">
-            {songs.map((item, index) => (
-              <div className="col-span-3" key={index}>
-                <HomePost item={item} />
-              </div>
-            ))}
+          <div className=" mt-4">
+            <SwiperPost array={songs} />
+          </div>
+        </div>
+        <div className="mt-9">
+          <label htmlFor="" className=" text-lg font-bold">
+            Recently played
+          </label>
+          <div className=" mt-4">
+            <SwiperPost array={[...songs, ...songs]} />
           </div>
         </div>
         <div className="mt-4">
           <label htmlFor="" className=" text-lg font-bold">
             Recently played
           </label>
-          <div className="grid grid-cols-12 gap-7 mt-4">
+          <div className="grid grid-cols-12 gap-3 mt-4">
             {songs.map((item, index) => (
               <>
                 <div className=" col-span-3" key={index}>

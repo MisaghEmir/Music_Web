@@ -6,8 +6,7 @@ function HomePost({ item }) {
       <div>
         <img
           src={item.image}
-          className="  object-cover w-40 h-32 rounded-sm "
-          style={{ aspectRatio: "4/4" }}
+          className=" h-44 object-cover w-96 md:w-80 rounded-sm "
           alt=""
         />
       </div>
