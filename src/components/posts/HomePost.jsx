@@ -6,7 +6,7 @@ function HomePost({ item }) {
       <div>
         <img
           src={item.image}
-          className=" h-44 object-cover w-96 md:w-80 rounded-sm "
+          className=" h-44 object-cover w-96 border border-color_border_600 md:w-80 rounded-sm "
           alt=""
         />
       </div>
