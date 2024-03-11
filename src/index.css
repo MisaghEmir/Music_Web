@@ -8,7 +8,8 @@
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
   -moz-osx-font-smoothing: grayscale;
@@ -352,6 +353,10 @@ div[data-theme="yellow"] {
   border-radius: 100px;
   height: 50%;
   width: 0;
+}
+
+.main {
+  background: linear-gradient(rgb(25, 74, 114) 0%, var(--color-box) 35%);
 }
 
 .transt {

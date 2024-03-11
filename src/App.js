@@ -21,9 +21,9 @@ function App() {
           <Sidebar />
         </div>
         <div
-          className={`${
-            sidebar ? "col-span-7" : "col-span-9"
-          } p-20 bg-background_box rounded-lg`}
+          className={`col-span-12 main ${
+            sidebar ? "md:col-span-7" : "md:col-span-9"
+          }  rounded-lg`}
         >
           <Suspense fallback={<Loading />}>
             <Routes>
@@ -31,7 +31,7 @@ function App() {
             </Routes>
           </Suspense>
         </div>
-        <div className=" col-span-2 p-20 bg-background_box rounded-lg">
+        <div className=" col-span-2 hidden md:block p-20 bg-background_box rounded-lg">
           more
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { GoHomeFill, GoSearch } from "react-icons/go";
 import { SiGitbook } from "react-icons/si";
+import { MdWebStories } from "react-icons/md";
 
 function Sidebar() {
   return (
@@ -20,7 +21,7 @@ function Sidebar() {
       <div className=" bg-background_box rounded-lg">
         <ul className="p-5 grid gap-5 playfair ">
           <li className="flex gap-4 items-center cursor-pointer">
-            <SiGitbook className="text-2xl" />
+            <MdWebStories className="text-2xl" />
             <p className="flex items-center">Your Library</p>
           </li>
           <li className="flex gap-4 items-center cursor-pointer">

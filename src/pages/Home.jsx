@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import Topbar from "../components/Topbar";
 
 function Home() {
   return (
-    <div>Home</div>
-  )
+    <div>
+      <Topbar />
+      <div className="p-5 px-7">
+        Posts
+      </div>
+    </div>
+  );
 }
 
-export default Home
+export default Home;
