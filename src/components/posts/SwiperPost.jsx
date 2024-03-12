@@ -13,13 +13,15 @@ import HomePost from "./HomePost";
 function SwiperPost({ array }) {
   const [screen, setScreen] = useState(3.5);
   useEffect(() => {
-    setScreen(window.innerWidth > 850 ? 3.5 : 2.2);
+    setScreen(window.innerWidth > 850 ? (window.innerWidth > 1105 ? 4.5 : 3.5) : 2.2);
   }, []);
   window.addEventListener("resize", () => {
     if (window.innerWidth < 865) {
       setScreen(2.2);
-    } else {
+    } else if (window.innerWidth < 1105) {
       setScreen(3.5);
+    } else {
+      setScreen(4.5);
     }
   });
   return (
@@ -27,7 +29,7 @@ function SwiperPost({ array }) {
       <Swiper
         // install Swiper modules
         modules={[A11y]}
-        spaceBetween={15}
+        spaceBetween={20}
         slidesPerView={screen}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}

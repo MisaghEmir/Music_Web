@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback, useState } from "react";
+import React, { useEffect, useCallback, useState, useRef } from "react";
 import Topbar from "../components/Topbar";
 import { getPlaylistAll, getSongAll } from "../config/API";
 import HomePost from "../components/posts/HomePost";
@@ -7,6 +7,7 @@ import SwiperPost from "../components/posts/SwiperPost";
 function Home() {
   const [playlists, setPlaylists] = useState([]);
   const [songs, setSongs] = useState([]);
+  const pageRef = useRef()
 
   const getPlaylist = useCallback(async () => {
     const playlistData = await getPlaylistAll();
@@ -18,8 +19,9 @@ function Home() {
   useEffect(() => {
     getPlaylist();
   }, [getPlaylist]);
+ 
   return (
-    <div>
+    <div ref={pageRef}>
       <Topbar />
       <div className="p-5 px-7">
         <div>
